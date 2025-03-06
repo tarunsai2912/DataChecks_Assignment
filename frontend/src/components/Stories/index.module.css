@@ -1,0 +1,59 @@
+.topStories {
+    margin-top: 3vh;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6vh;
+    
+    .allStories {
+        position: relative;
+        width: 100%;
+        padding: 0 10px;
+        font-size: 1.1em;
+        display: flex;
+        gap: 4%;
+        row-gap: 20px;
+        align-items: center;
+        font-weight: 600;
+        color: #8E8E8E;
+        margin-top: 20px;
+
+        .noStory {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+    }
+
+    .seeMore {
+        width: 100px;
+        height: 32px;
+        border-radius: 20px;
+        border: none;
+        background-color: #FF7373;
+        color: white;
+        outline: none;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .seeMore:hover {
+        transform: scale(1.02);
+    }
+
+}
+
+@media only screen and (max-width: 769px){
+    .topStories {
+    
+        .allStories {
+            display: flex;
+            flex-direction: column;
+        }
+    
+    }
+}

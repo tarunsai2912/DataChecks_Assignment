@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+#signup-tool-tip {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top: 2px;
+}
+#signup-tool-tip img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    font-size: 8px;
+    font-weight: 400;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 75%;
+    left: 14%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+border-top: 3px solid #3498db; /* Blue */
+border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width : 769px) {
+  #signup-tool-tip {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+  }
+  .tooltip .tooltiptext {
+    left: -48px;
+    bottom: 110%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    left: 92%;
+  }
+  
+}

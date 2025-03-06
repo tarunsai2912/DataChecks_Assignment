@@ -1,0 +1,36 @@
+.container {
+    border: 5px solid rgb(247, 86, 86);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    line-height: 0.9;
+
+    .error1 {
+        font-weight: 150;
+        font-size: 13vw;
+        color: rgb(124, 124, 124);
+    }
+
+    .error2 {
+        font-weight: 400;
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .container {
+        .error1 {
+            font-size: 40vw;
+        }
+    
+        .error2 {
+            font-size: 5vw;
+        }
+    }
+}
